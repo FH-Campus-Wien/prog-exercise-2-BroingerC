@@ -7,6 +7,41 @@ public class App {
     //todo Task 1
     public void largestNumber(){
         // input your solution here
+
+        final int ROWS = 5;
+        final int COLS = 4;
+
+        for(int i = 0; i < ROWS; i++){
+            for(int j = 1; j < COLS; j++){
+                System.out.print(i+j+"  ");
+            }
+            System.out.println(" ");
+        }
+
+//        char c = 'H';
+//        System.out.println(c);
+//        System.out.println((int)c);
+//
+//        for(int i = 0; i < 255; i++) {
+//            System.out.print((char)i + "  ");
+//        }
+//
+//        final int ROWS = 8;
+//        final int COLS = 8;
+//
+//        for(int i = 0; i < ROWS; i++){
+//            for(int j = 0; j < COLS; i++) {
+//                if((i+j) % 2 == 0) {
+//                    System.out.print("* ");
+//                } else {
+//                    System.out.print("  ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+
+
     }
 
     //todo Task 2
@@ -17,6 +52,20 @@ public class App {
     //todo Task 3
     public void printPyramid(){
         // input your solution here
+
+        final int ROWS = 6;
+        final int COLS = 11;
+
+        for(int i=1; i <=ROWS; i++){
+            for(int j=1; j <=COLS-i; j++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=2*i-1; j++){
+                System.out.print("*");
+            }
+            System.out.print("\n");
+            System.out.print("");
+        }
     }
 
     //todo Task 4
