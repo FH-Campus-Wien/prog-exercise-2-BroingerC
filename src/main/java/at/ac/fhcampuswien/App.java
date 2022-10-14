@@ -15,13 +15,35 @@ public class App {
     }
 
     //todo Task 3
-    public void printPyramid(){
+    public void printPyramid() {
         // input your solution here
+
+        int ROWS = 6, k = 0;
+
+        for (int i = 1; i <= ROWS; ++i, k=0) {
+            for (int space = 1; space <= ROWS - i; ++space) {
+                System.out.print(" ");
+            }
+
+        while (k != 2 * i - 1){
+            System.out.print("*");
+            ++k;
+        }
+
+        System.out.println();
+
+        }
+
+
+
+
     }
 
     //todo Task 4
     public void printRhombus(){
         // input your solution here
+
+
     }
 
     //todo Task 5
