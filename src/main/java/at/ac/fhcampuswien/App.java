@@ -12,11 +12,38 @@ public class App {
     //todo Task 2
     public void stairs(){
         // input your solution here
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("n:");
+
+        int ROWS = scan.nextInt();
+
+        int x = 1;
+        int y = 1 + x;
+
+        for (int row = 0; row < ROWS; row++){
+            for (int col = 0; col < ROWS; col++){
+                if (row >= col)
+                    System.out.print(y);
+            }
+
+          //  for (k = 1; k <= i * 2 - 1; k++){
+          //      System.out.print((char)(alphabet + k ));
+
+
+        System.out.println();
+        }
     }
 
     //todo Task 3
     public void printPyramid() {
         // input your solution here
+
+/**
+ * The following lines of Code have been taken from the Internet |
+ * https://beecoder.org/de/java/create-pyramid-and-pattern-in-java, last visit: 14.10.2022
+ */
 
         int ROWS = 6, k = 0;
 
@@ -35,16 +62,47 @@ public class App {
         }
 
 
-
-
     }
 
     //todo Task 4
-    public void printRhombus(){
+    public void printRhombus() {
         // input your solution here
 
+/**
+ * The following lines of Code have been taken from the Internet |
+ * https://www.tutorialgateway.org/java-program-to-print-diamond-alphabets-pattern/, last visit: 14.10.2022
+ */
 
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("h:");
+        System.out.print("c:");
+
+        int ROWS = scan.nextInt();
+        int i, j, k, alphabet = 64;
+
+        for (i = 1; i <= ROWS; i++){
+            for (j = 1; j <= ROWS-i; j++){
+                System.out.print(" ");
+            }
+
+        for (k = 1; k <= i * 2 - 1; k++){
+            System.out.print((char)(alphabet + k));
+        }
+        System.out.println();
+        }
+
+        for (i = ROWS - 1; i > 0; i--){
+            for (j = 1; j <= ROWS - i; j++){
+                System.out.print(" ");
+            }
+        for (k = 1; k <= i * 2 - 1; k++){
+            System.out.print((char)(alphabet + k ));
+        }
+        System.out.println();
+        }
     }
+
 
     //todo Task 5
     public void marks(){
